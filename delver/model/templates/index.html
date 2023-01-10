@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Delver</title>
+</head>
+<body>
+    
+      <!--navbar-->
+      <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+          <a href="#" class="flex items-center">
+              <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+              <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">D E L V E R</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                    <a href="" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+                  </li>
+                  <li>
+                    <a href="login/" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Login</a>
+                  </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--navbar-end-->
+      <br>
+      <!--Search Bar-->
+      <form class="flex items-center">   
+        <label for="voice-search" class="sr-only">Search</label>
+        <div class="relative w-full">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+            </div>
+            <input type="text" id="voice-search" name="search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search here..." required>
+            <button type="button" id="start-btn" class="absolute inset-y-0 right-0 flex items-center pr-3">
+                <svg aria-hidden="true" class="w-4 h-4 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clip-rule="evenodd"></path></svg>
+            </button>  
+            {% comment %} <button id="start-btn" class="long-press-btn"  title="Start">Start</button> {% endcomment %}
+        </div>
+        <button type="submit" value="submit" class="inline-flex items-center py-2.5 px-3 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            <svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>Search
+        </button>
+    </form>
+    <!--Searchbar-End-->
+<br>
+
+{% comment %} <div class="login100-form validate-form p-b-33 p-t-5">
+    <div class="container-login100-form-btn m-t-32">                                
+        <button id="start-btn" class="long-press-btn"  title="Start">Start</button>
+        <div class="wrap-input100 validate-input">
+            <p class="input100"id="instructions">Press the Start button</p>
+        </div> 
+       
+        <!-- <button  id="stop-btn" title="Stop">Stop</button> -->
+    </div>
+   
+    <div class="wrap-input100 validate-input">
+        <!-- <input class="input100" style="padding-right: 20px;" type="text" id="textbox"  name="code" placeholder="Home Command" required> -->
+        <textarea class="input100" id="textbox" style="padding-right: 20px;" placeholder="Home Command "></textarea>
+    </div> 
+</div> {% endcomment %}
+
+    <!--Table-->
+    {% if zip%}
+<div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="py-3 px-6">
+                    Auther Name
+                </th>
+                <th scope="col" class="py-3 px-6">
+                    Title of the Article
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i , j in zip%}
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    {{i}}
+                </td>
+                <td class="py-4 px-6">
+                    {{j}}
+                </td>
+            </tr>
+            {% endfor %}
+                
+        </tbody>
+    </table>
+</div>
+{% else %}
+<div id="alert-2" class="flex p-4 mb-4 bg-red-100 rounded-lg dark:bg-red-200" role="alert">
+    <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-red-700 dark:text-red-800" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+    <span class="sr-only">Info</span>
+    <div class="ml-3 text-sm font-medium text-red-700 dark:text-red-800">
+        No results found!!!  Our dataset only consist of Computer Science faculty details.
+    </div>
+    <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-red-100 text-red-500 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex h-8 w-8 dark:bg-red-200 dark:text-red-600 dark:hover:bg-red-300" data-dismiss-target="#alert-2" aria-label="Close">
+      <span class="sr-only">Close</span>
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div>
+
+{% endif %}  
+
+</body>
+<script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+<script>
+
+    var recognition = new window.webkitSpeechRecognition();
+    var Textbox = $('#voice-search');
+    var instructions = $('#instructions');
+    var Content = '';
+    recognition.continuous = true;
+  
+    recognition.onresult = function (event) {
+  
+        console.log(event.results)
+        var current = event.resultIndex;
+  
+        var transcript = event.results[current][0].transcript;
+        var pvalid = document.getElementsByTagName('valid');
+        Content = transcript;
+        Textbox.val(Content);
+  
+        function getVoices() {
+            let voices = speechSynthesis.getVoices();
+            if (!voices.length) {
+                let utterance = new SpeechSynthesisUtterance("");
+                speechSynthesis.speak(utterance);
+                voices = speechSynthesis.getVoices();
+            }
+            return voices;
+        }
+  
+        $.ajax({
+            type: 'POST',
+            url: "home.html",
+            data:
+            {
+                message: transcript,
+                csrfmiddlewaretoken: $('{% csrf_token %}').val()
+  
+            },
+  
+            <!-- TODO text to Voice-->
+            success: function (response) {
+                console.log(response.status)
+                pvalid[0].innerText = response.status;
+  
+                let textToSpeak = response.status;
+  
+                let speakData = new SpeechSynthesisUtterance();
+                speakData.volume = 1; // From 0 to 1
+                speakData.rate = 1; // From 0.1 to 10
+                speakData.pitch = 2; // From 0 to 2
+                speakData.text = textToSpeak;
+                speakData.lang = 'en';
+                speakData.voice = getVoices()[1];
+  
+                speechSynthesis.speak(speakData);
+  
+  
+            },
+        })
+    };
+  
+    recognition.onstart = function () {
+        instructions.text('Voice recognition is ON.');
+    }
+  
+    recognition.onspeechend = function () {
+        instructions.text('No activity.');
+    }
+  
+    recognition.onerror = function (event) {
+        console.log(event.error)
+        if (event.error == 'no-speech') {
+            instructions.text('Try again.');
+        }
+    }
+  
+    $('#start-btn').on('click', function (e) {
+        if (Content.length) {
+            Content += ' ';
+        }
+        document.getElementById("start-btn").innerText = "Listening..."
+        recognition.start();
+    });
+  
+    Textbox.on('input', function () {
+        Content = $(this).val();
+    })
+  
+  
+    $('#stop-btn').on('click', function (e) {
+        recognition.abort();
+        document.getElementById("start-btn").innerText = "START"
+        instructions.text('press to record');
+    });
+  
+  </script>
+</html>
